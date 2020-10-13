@@ -1,0 +1,86 @@
+#modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0E0A14EF;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+
+#modal.hide{ /*When modal is hide, it does not appear*/
+    display: none;
+}
+
+#modal .content{
+    color: white;
+    width: 420px;
+}
+
+#modal .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+#modal .header a{
+    background-image: url("../assets/x.svg");
+    width: 20px; /*We set the image width*/
+    height: 20px; /*We set the image height*/
+    display: flex;
+    font-size: 0; /*We remove the word "Fechar"*/
+}
+
+#modal .header h1{
+    color: white;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+#modal form label{
+    font-size: 24px;
+    line-height: 16px;
+    display: block; /*Remove display in-line*/
+    margin-bottom: 8px;
+}
+
+#modal form .field{
+    display: flex;
+}
+
+#modal form input{
+    flex: 1; /*It will fill the space*/
+    background-color: var(--background-color);
+    border-radius: 8px 0 0 8px; /*It gives the impression that the input box and the button are attached*/
+    border: none;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6C6C80; /*Color of what will be written*/
+}
+
+#modal form button{
+    width: 72px;
+    height: 72px;
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 0 8px 8px 0; /*It gives the impression that the input box and the button are attached*/
+}
+
+#modal form button:hover{
+    background-color: #2FB85E;
+}
+
+/*modal point-created*/
+#modal.point .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.point h1{
+    color: white;
+    margin-top: 32px;
+}
